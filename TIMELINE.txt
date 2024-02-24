@@ -8,3 +8,10 @@
 npm create vite@latest frontend -- --template react
 4. ADD NPM 
 -> npm i
+5. INSTALL REACT-ROUTER-DOM 
+->npm i react-router-dom
+5. INSTALL AXIOS 
+->npm i axios
+6. INSTALL TAILWINDCSS
+->npm install -D tailwindcss 
+->npx tailwindcss init
