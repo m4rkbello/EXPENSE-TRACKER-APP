@@ -1,1 +1,6 @@
-1. CREATE PROJECT LARAVEL
+1. CREATE LARAVEL PROJECT 
+-> laravel new backend
+2. INSTALL LARAVEL-BREEZE FOR API 
+-> composer require laravel/breeze --breeze
+-> php artisan breeze:install
+-> php artisan migrate
