@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import {Link} from 'react-router-dom';
+import avatar1 from '../assets/avatarv1.png'
 
 
 const Login = () => {
@@ -15,6 +16,9 @@ const Login = () => {
           <h1 className="text-5xl font-bold">Login now!</h1>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <center>
+          <img src={avatar1} className="object-contain h-48 w-48 rounded-full" />
+          </center>
           <form className="card-body">
             <div className="form-control">
               <label className="label">
