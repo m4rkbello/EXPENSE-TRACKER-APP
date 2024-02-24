@@ -38,23 +38,30 @@ function App() {
       </div>
 
       <div className="flex">
-  <div className="flex-none">
-  <Sidebar />
-    
-  </div>
-  <div className="flex-initial">
-  <div className="max-w-md">
-    <Routes>
-      <Route exact path="/wallet" element={<Wallet />} />
-      <Route exact path="/login" element={<Login />} />
-      <Route exact path="/register" element={<Register />} />
-    </Routes>
-  </div>
-    
-  </div>
-</div>
+        <div className="mr-20">
+        <div>
+        <Sidebar />
+        <Footer />
+        </div>
+          <div className="mt-20">
+          
+          </div>
 
-      <Footer />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex items-center mt-20 mb-20">
+            <Routes>
+              <Route exact path="/wallet" element={<Wallet />} />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/register" element={<Register />} />
+            </Routes>
+
+          </div>
+
+        </div>
+      </div>
+
+
 
     </div>
 
