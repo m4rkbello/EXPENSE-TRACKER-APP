@@ -15,3 +15,5 @@ npm create vite@latest frontend -- --template react
 6. INSTALL TAILWINDCSS
 ->npm install -D tailwindcss postcss autoprefixer 
 ->npx tailwindcss init -p
+7. ADD DAISYUI AS PLUGGINS
+->npm i -D daisyui@latest
