@@ -13,5 +13,5 @@ npm create vite@latest frontend -- --template react
 5. INSTALL AXIOS 
 ->npm i axios
 6. INSTALL TAILWINDCSS
-->npm install -D tailwindcss 
-->npx tailwindcss init
+->npm install -D tailwindcss postcss autoprefixer 
+->npx tailwindcss init -p
