@@ -4,7 +4,7 @@ import React from 'react'
 const Register = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
         <div className="text-center"></div>
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-center">
@@ -41,7 +41,7 @@ const Register = () => {
                 </label>
               </div>
               <div className="form-control mt-2">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn bg-gradient-to-r from-cyan-500 to-blue-500">Login</button>
               </div>
             </form>
           </div>

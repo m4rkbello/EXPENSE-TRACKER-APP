@@ -1,12 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import {Link} from 'react-router-dom';
+
 
 const Login = () => {
   return (
     <div>
     <div>
     
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
       <div className="text-center"></div>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
@@ -25,14 +27,16 @@ const Login = () => {
                 <span className="label-text">Password</span>
               </label>
               <input type="password" placeholder="password" className="input input-bordered" required />
+              </div>
+              <div className="form-control mt-6">
+              <button className="btn bg-gradient-to-r from-cyan-500 to-blue-500">Login</button>
+              </div>
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+              <Link to="/register">
+              <a className="text-md link link-hover text-center">Create Account?</a>
+              </Link>
               </label>
-            </div>
-            <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
-            </div>
-          </form>
+              </form>
         </div>
       </div>
     </div>

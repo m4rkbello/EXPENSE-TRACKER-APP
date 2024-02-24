@@ -5,7 +5,7 @@ import Register from './components/Register';
 
 function App() {
   return (
-    <div className="bg-violet-600">
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500">
     <div className="navbar bg-base-100">
     <div className="navbar-start">
       <div className="dropdown">
@@ -19,15 +19,15 @@ function App() {
         </ul>
       </div>
     </div>
-    <div className="navbar-center">
-      <a className="btn btn-ghost text-xl">EXPENSE TRACKER</a>
+    <div className="navbar-center text-xl text-indigo-900">
+     EXPENSE TRACKER
     </div>
     <div className="navbar-end">
       <div>
-        <Link to="/login">LOGIN</Link>
+        <Link className="pr-5" to="/login">LOGIN</Link>
       </div>
-      <div>
-      <Link to="/register">REGISTER</Link>
+      <div >
+      <Link className="pr-5" to="/register">REGISTER</Link>
     </div>
 
     </div>
