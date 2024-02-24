@@ -6,3 +6,5 @@
 -> php artisan migrate
 3. INSTALL REACTJS-VITE BUNDLER
 npm create vite@latest frontend -- --template react
+4. ADD NPM 
+-> npm i
