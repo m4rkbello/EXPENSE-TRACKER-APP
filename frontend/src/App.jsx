@@ -2,7 +2,6 @@ import { Routes, Route, Link } from "react-router-dom";
 
 import Login from './components/Login';
 import Register from './components/Register';
-import Wallet from './components/Dashboard';
 import Sidebar from "./components/Sidebar";
 import Footer from './components/Footer';
 
@@ -51,7 +50,7 @@ function App() {
         <div className="flex flex-col">
           <div className="flex items-center mt-20 mb-20">
             <Routes>
-              <Route exact path="/wallet" element={<Wallet />} />
+            
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/register" element={<Register />} />
             </Routes>
