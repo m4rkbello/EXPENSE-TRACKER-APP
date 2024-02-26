@@ -1,63 +1,70 @@
-import { connect } from 'react-redux';
-import { FetchUserList, RemoveUser, } from "../redux/Actions";
-import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+/* eslint-disable no-unused-vars */
+import React from 'react'
 
+function WalletDashboard() {
+  return (
+    <div>
 
-const WalletDashboard = (props) => {
-    console.log("DATA SA CHOI", props);
+      <div className="flex">
+        <div className="flex-none">
+          <div className="card w-full glass">
+            <div className="card-body">
+              <div className="overflow-x-auto">
 
-    useEffect(() => {
-        props.loaduser();
-    }, [])
+                <div className='text-center text-3xl text-black'>WALLET LIST</div>
 
-    const handleDelete = (code) => {
-        if(window.confirm("DO YOU WANT TO DELETE?")){
-            props.removeuser(code);
-            props.loaduser();
-            toast.success('User has been deleted Successfully!'); 
-        }
-    }
-
-    return (
-        <div>
-            <ToastContainer />
-            <div className="navbar-color col-8 text mx-auto">
-                <div className="card-header userlist"></div>
-                <h1 className='userHeader'>User List!</h1>
-                <div className="buttonAdd">
-                    <Link to={'/user/add'} className="btn btn-secondary">Add User</Link>
-                </div>
-                <br />
-                
-                <table className="table table-bordered text-align-center">
-                    <thead>
-                        <tr>
-                            <td>Id</td>
-                            <td>Name</td>
-                            <td>Email</td>
-                            <td>Phone</td>
-                            <td>Role</td>
-                            <td>Action</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                     
-                            <tr>
-                                <td colSpan="6"><h1>
-                                NO DATA!
-                                </h1></td>
-                            </tr>
-                        
-                    </tbody>
+                <table className="table">
+                  {/* head */}
+                  <thead className='bg-black'>
+                    <tr>
+                      <th>NAME</th>
+                      <th></th>
+                      <th>Job</th>
+                      <th>Favorite Color</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {/* row 1 */}
+                    <tr>
+                      <th>1</th>
+                      <td>Cy Ganderton</td>
+                      <td>Quality Control Specialist</td>
+                      <td>Blue</td>
+                    </tr>
+                    {/* row 2 */}
+                    <tr className="hover">
+                      <th>2</th>
+                      <td>Hart Hagerty</td>
+                      <td>Desktop Support Technician</td>
+                      <td>Purple</td>
+                    </tr>
+                    {/* row 3 */}
+                    <tr>
+                      <th>3</th>
+                      <td>Brice Swyre</td>
+                      <td>Tax Accountant</td>
+                      <td>Red</td>
+                    </tr>
+                  </tbody>
                 </table>
+              </div>
             </div>
+          </div>
+
         </div>
-    );
+        <div className="flex-initial">
+
+        </div>
+        <div className="flex-initial w-32 ...">
+          03
+        </div>
+      </div>
+
+
+
+
+    </div>
+  )
 }
 
-
-
-export default WalletDashboard;
+export default WalletDashboard

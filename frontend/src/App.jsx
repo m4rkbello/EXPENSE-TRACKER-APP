@@ -4,6 +4,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Sidebar from "./components/Sidebar";
 import Footer from './components/Footer';
+import WalletDashboard from "./components/WalletDashboard";
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
             
               <Route exact path="/login" element={<Login />} />
               <Route exact path="/register" element={<Register />} />
+              <Route exact path="/wallet" element={<WalletDashboard />} />
             </Routes>
 
           </div>

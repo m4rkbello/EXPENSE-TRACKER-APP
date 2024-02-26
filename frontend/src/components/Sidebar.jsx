@@ -57,6 +57,62 @@ function Sidebar() {
   </ul>
 </details>
 </li>
+<li>
+<details close>
+  <summary>Parent</summary>
+  <ul>
+    <li><a>Submenu 1</a></li>
+    <li><a>Submenu 2</a></li>
+  </ul>
+</details>
+</li>
+<li>
+<details close>
+  <summary>Parent</summary>
+  <ul>
+    <li><a>Submenu 1</a></li>
+    <li><a>Submenu 2</a></li>
+  </ul>
+</details>
+</li>
+<li>
+<details close>
+  <summary>Parent</summary>
+  <ul>
+    <li><a>Submenu 1</a></li>
+    <li><a>Submenu 2</a></li>
+  </ul>
+</details>
+</li>
+<li>
+<details close>
+  <summary>Parent</summary>
+  <ul>
+    <li><a>Submenu 1</a></li>
+    <li><a>Submenu 2</a></li>
+  </ul>
+</details>
+</li>
+<li>
+<details close>
+  <summary>Parent</summary>
+  <ul>
+    <li><a>Submenu 1</a></li>
+    <li><a>Submenu 2</a></li>
+  </ul>
+</details>
+</li>
+<li>
+<details close>
+  <summary>Parent</summary>
+  <ul>
+    <li><a>Submenu 1</a></li>
+    <li><a>Submenu 2</a></li>
+  </ul>
+</details>
+</li>
+
+
 </ul>
     </div>
   )
