@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import WalletDashboard from "./components/WalletDashboard";
 
 
+
 function App() {
   return (
     <div className="bg-gradient-to-r from-cyan-500 to-blue-500">

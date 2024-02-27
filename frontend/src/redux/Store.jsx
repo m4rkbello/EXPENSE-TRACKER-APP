@@ -1,12 +1,8 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import walletReducers from '../redux/reducers/walletReducers' // Assuming Reducer is exported as default from './Reducers'
-
-const rootReducer = combineReducers({
-  wallet: walletReducers, 
-});
+import { configureStore } from '@reduxjs/toolkit';
+import walletReducer from '../redux/reducers/walletReducers'; // Importing the default export
 
 const store = configureStore({
-  reducer: rootReducer, 
+  reducer: walletReducer,
 });
 
 export default store;
